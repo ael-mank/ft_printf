@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 11:02:22 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/11/27 11:03:27 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/11/28 11:26:18 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,14 @@
 # define LIBFTPRINTF_H
 
 # include <stdarg.h>
+# include <stdio.h>
+# include <stddef.h>
+# include <stdlib.h>
+# include <unistd.h>
+
+int		ft_printf(const char *str, ...);
+int		ft_printchar(char c);
+int		ft_printstr(char *str);
+int		ft_strlen(char *str);
 
 #endif
