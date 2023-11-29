@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 11:01:12 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/11/28 11:25:15 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/11/29 11:28:18 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_printchar(char c)
 int	ft_printstr(char *str)
 {
 	if (!str)
-		return(write(1, "(null)", 6));
+		return (write(1, "(null)", 6));
 	else
-		return(write(1, str, ft_strlen(str)));
+		return (write(1, str, ft_strlen(str)));
 }
