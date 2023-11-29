@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 11:05:49 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/11/29 11:37:48 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/11/29 11:41:15 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,7 @@ int	ft_printf(const char *str, ...)
 
 int	main(int argc, char **argv)
 {
-	(void);
+	(void)argc;
+	(void)argv;
+	ft_printf("test %% %s ici%% test %c", "test", 'c');
 }
