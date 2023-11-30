@@ -6,7 +6,7 @@
 #    By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/27 10:34:18 by ael-mank          #+#    #+#              #
-#    Updated: 2023/11/29 11:24:20 by ael-mank         ###   ########.fr        #
+#    Updated: 2023/11/30 10:03:30 by ael-mank         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ AR			= ar rcs
 
 # Sources
 
-SRC_FILES	= ft_printf ft_utils minilibft
+SRC_FILES	= ft_printf ft_printchars ft_printptr minilibft
 
 
 SRC 		= $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
