@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 11:05:49 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/11/28 14:21:10 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/11/30 08:23:11 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,4 @@ int main(int argc, char **argv)
 {
 	(void)argc;
 	ft_printf("test %% %s ici%% test %c", "test", 'c');
-	printf("%i", ft_printf("test %% %s test %c", "test", 'c'));
-}
+}:
