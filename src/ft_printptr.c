@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 08:37:56 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/11/30 10:20:19 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/11/30 10:52:30 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,6 @@ size_t	puthex(unsigned long long ptr)
 int	ft_printptr(unsigned long long ptr)
 {
 	if (!ptr)
-		return (write(1, "(null)", 6));
+		return (write(1, "(nil)", 5));
 	return (write(1, "0x", 2) + puthex(ptr));
 }

@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 11:05:49 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/11/30 10:10:10 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/11/30 10:53:29 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	ft_checktype(va_list args, const char type)
 		return (ft_printstr(va_arg(args, char *)));
 	else if (type == 'p')
 		return (ft_printptr(va_arg(args, unsigned long long)));
+	else if ((type == 'd') || (type == 'i'))
+		return (ft_putnbr(va_arg(args, int)));
 	else if (type == '%')
 		return (ft_printchar('%'));
 	return (1);
@@ -46,12 +48,4 @@ int	ft_printf(const char *str, ...)
 	}
 	va_end(args);
 	return (len);
-}
-
-int	main(void)
-{
-	int a = 5;
-	int * b = &a;
-	printf("taille : %i\n", ft_printf("addresse du pointeur : %p  ", b));
-	printf("taille : %i\n", printf("addresse du pointeur : %p  ", b));
 }
