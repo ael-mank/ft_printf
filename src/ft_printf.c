@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 01:58:36 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/12/07 12:01:21 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/12/09 14:34:36 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ int	ft_printf(const char *str, ...)
 	int		len;
 	t_flags	*flags;
 
+	if (!str)
+		return (-1);
 	flags = create_struct();
 	va_start(args, str);
 	len = iterate(str, flags, args);
