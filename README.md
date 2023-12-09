@@ -1,4 +1,19 @@
-# libftprintf.a
+<div align="center">
+
+  <h1>Ft_Printf</h1>
+  <b>Second project of my 42 cursus.</b>
+  <br>
+  <br>
+  <b>Because ft_putnbr() and ft_putstr() aren’t enough<b>
+  <br>
+  <br>
+   
+
+  ![Static Badge](https://img.shields.io/badge/Language-green?style=for-the-badge&logo=C&labelColor=%23323030&color=%2381D2C7)
+
+
+
+</div>
 
 ## Overview
 
