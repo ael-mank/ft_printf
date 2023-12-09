@@ -1,127 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+# libftprintf.a
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>libftprintf.a</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #333;
-    }
+## Overview
 
-    h1 {
-      color: #3498db;
-    }
+Ft_printf is a cool and efficient implementation of the `printf()` function! This library, coded from scratch, it aims to replicate the functionality of the original `printf()` found in the libc library.
 
-    h2 {
-      color: #2ecc71;
-    }
+## Project Structure
 
-    h3 {
-      color: #e74c3c;
-    }
+Ensure you have the following files in your project directory:
 
-    pre {
-      background-color: #f8f9fa;
-      padding: 10px;
-      border-radius: 5px;
-      overflow-x: auto;
-    }
+- `Makefile`: To compile the project with various options.
+- `include/ft_printf.h`: Header files containing function prototypes and necessary declarations.
+- `src/*.c`: Source code files implementing the `ft_printf()` function and supporting functions.
 
-    code {
-      font-family: 'Courier New', Courier, monospace;
-    }
+## Makefile Commands
 
-    ul {
-      list-style-type: none;
-    }
+- `make`: Compiles the project and creates the `libftprintf.a` library.
+- `make help`: Displays a list of available commands.
+- `make clean`: Removes object files, keeping only the source code.
+- `make fclean`: Cleans the project by removing the compiled library and object files.
+- `make re`: Performs a full recompilation by cleaning and then recompiling the project.
 
-    li::before {
-      content: "➤ ";
-      color: #3498db;
-      font-weight: bold;
-      margin-right: 5px;
-    }
-  </style>
-</head>
+## External Functions
 
-<body>
+The implementation uses the following external functions:
 
-  <h1>libftprintf.a</h1>
+- `malloc`: Allocates memory dynamically.
+- `free`: Frees allocated memory.
+- `write`: Writes to a file descriptor.
+- `va_start`, `va_arg`, `va_copy`, `va_end`: Functions for handling variable arguments.
 
-  <h2>Overview</h2>
+## Functionality
 
-  <p>Welcome to <code>libftprintf.a</code> – a cool and efficient implementation of the <code>printf()</code> function! This library, coded from scratch, aims to replicate the functionality of the original <code>printf()</code> found in the libc library.</p>
+The main attraction of this library is the `ft_printf()` function, which emulates the behavior of the original `printf()`. It supports the following conversions:
 
-  <h2>Project Structure</h2>
+- `%c`: Character
+- `%s`: String
+- `%p`: Pointer
+- `%d`: Decimal
+- `%i`: Integer
+- `%u`: Unsigned integer
+- `%x`: Hexadecimal (lowercase)
+- `%X`: Hexadecimal (uppercase)
+- `%%`: Percentage sign
 
-  <p>Ensure you have the following files in your project directory:</p>
+## Bonus Features
 
-  <ul>
-    <li><code>Makefile</code>: To compile the project with various options.</li>
-    <li><code>*.h</code> and <code>*/*.h</code>: Header files containing function prototypes and necessary declarations.</li>
-    <li><code>*.c</code> and <code>*/*.c</code>: Source code files implementing the <code>ft_printf()</code> function and supporting functions.</li>
-  </ul>
+In addition to the standard functionality, the library includes the following bonuses:
 
-  <h2>Makefile Commands</h2>
+- Any combination of the following flags: `-`, `0`, `.`
+- And all the following flags: `#`, `+`, `space`, `*`
 
-  <pre>
-    <code>make NAME</code>: Compiles the project and creates the <code>libftprintf.a</code> library.
+## Important Notes
 
-    <code>make all</code>: Same as <code>make NAME</code>.
+- Buffer management from the original `printf()` is deliberately not implemented.
 
-    <code>make clean</code>: Removes object files, keeping only the source code.
-
-    <code>make fclean</code>: Cleans the project by removing the compiled library and object files.
-
-    <code>make re</code>: Performs a full recompilation by cleaning and then recompiling the project.
-  </pre>
-
-  <h2>External Functions</h2>
-
-  <p>The implementation uses the following external functions:</p>
-
-  <ul>
-    <li><code>malloc</code>: Allocates memory dynamically.</li>
-    <li><code>free</code>: Frees allocated memory.</li>
-    <li><code>write</code>: Writes to a file descriptor.</li>
-    <li><code>va_start</code>, <code>va_arg</code>, <code>va_copy</code>, <code>va_end</code>: Functions for handling variable arguments.</li>
-  </ul>
-
-  <h2>Libft Integration</h2>
-
-  <p>Yes, you are authorized to use the functions from the <code>libft</code> library.</p>
-
-  <h2>Functionality</h2>
-
-  <p>The main attraction of this library is the <code>ft_printf()</code> function, which emulates the behavior of the original <code>printf()</code>. It supports the following conversions:</p>
-
-  <ul>
-    <li><code>%c</code>: Character</li>
-    <li><code>%s</code>: String</li>
-    <li><code>%p</code>: Pointer</li>
-    <li><code>%d</code>: Decimal</li>
-    <li><code>%i</code>: Integer</li>
-    <li><code>%u</code>: Unsigned integer</li>
-    <li><code>%x</code>: Hexadecimal (lowercase)</li>
-    <li><code>%X</code>: Hexadecimal (uppercase)</li>
-    <li><code>%%</code>: Percentage sign</li>
-  </ul>
-
-  <h2>Important Notes</h2>
-
-  <ul>
-    <li>Buffer management from the original <code>printf()</code> is deliberately not implemented.</li>
-    <li>The library will be rigorously compared against the original <code>printf()</code> for accuracy.</li>
-    <li><code>ar</code> command must be used to create the library; use of <code>libtool</code> is forbidden.</li>
-    <li><code>libftprintf.a</code> should be created at the root of your repository.</li>
-  </ul>
-
-  <p>Feel free to explore and enhance this cool <code>libftprintf.a</code> project! If you have any questions or feedback, don't hesitate to reach out. Happy coding! 🚀</p>
-
-</body>
-
-</html>
+If you have any questions or feedback, don't hesitate to reach out. Happy coding! 🚀
