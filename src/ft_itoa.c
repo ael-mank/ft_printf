@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 01:57:58 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/12/07 12:01:14 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/12/09 17:08:13 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*malloc_zero(int len, int precisize)
 	return (ret);
 }
 
-char	*ft_itoa(int n, t_flags *flag, int len)
+char	*ft_itoa_ptf(int n, t_flags *flag, int len)
 {
 	char	*result;
 	long	nbr;
