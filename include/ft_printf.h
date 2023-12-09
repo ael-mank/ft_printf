@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 02:10:24 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/12/07 11:56:09 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/12/09 17:08:58 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int		set_v(int n, t_flags *flags);
 int		ft_integer_flag(char sign);
 int		ft_int_len(long nbr);
 void	add_zero(char *str, int precisize, int len);
-char	*ft_itoa(int n, t_flags *flag, int len);
+char	*ft_itoa_ptf(int n, t_flags *flag, int len);
 int		integer_handler(int n, t_flags *flags);
 int		justify_putflags_integer(char *str, t_flags *flags, int n);
 void	print_width_flags(char *str, t_flags *flags, int n, int len);

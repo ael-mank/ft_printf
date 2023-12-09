@@ -6,7 +6,7 @@
 /*   By: ael-mank <ael-mank@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 01:57:50 by ael-mank          #+#    #+#             */
-/*   Updated: 2023/12/07 11:55:04 by ael-mank         ###   ########.fr       */
+/*   Updated: 2023/12/09 17:08:16 by ael-mank         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	integer_handler(int n, t_flags *flags)
 
 	ret = 0;
 	len = ft_int_len(n);
-	str = ft_itoa(n, flags, len);
+	str = ft_itoa_ptf(n, flags, len);
 	if (n == 0)
 		ret += justify_putflags_zero2(str, flags);
 	else if (flags->precision == 1 && n != 0)
